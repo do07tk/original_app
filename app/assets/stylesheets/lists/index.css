@@ -1,0 +1,14 @@
+.main{
+  width: 100vw;
+  height: calc(100vh - 150px);
+  background-color: white;
+  display: flex;
+}
+.title{
+  width: 250px;
+  background-color: white;
+}
+.message{
+  width: calc(100% - 250px);
+  background-color: black;
+}

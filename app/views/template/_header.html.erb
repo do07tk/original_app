@@ -1,0 +1,16 @@
+<header classs = "header">
+  <div class = "logo-box">
+    <div class = "logo">original</div>
+  </div>
+  <div class = "right-header">
+    <ul class = "user-page">
+      <%# if user_signed_in? %>
+        <%#<li><%#= link_to "マイページ", "#", class: "mypage" %><%#</li>
+        <%#<li><%#= link_to 'ログアウト', "#", method: :delete, class: "logout" %><%#</li>
+      <%# else %>
+        <li><%= link_to 'ログイン', "#", class: "login" %></li>
+        <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+      <%# end %>
+    </ul>
+  </div>
+</header>

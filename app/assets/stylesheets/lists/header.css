@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+header{
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  background-color: white;
+}
+.logo{
+  font-size: 40px;
+}
+.logo-box{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.right-header{
+  display: flex;
+  width: calc(100% - 250px);
+  position: relative;
+  background-color: black;
+}
+.user-page{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  position: absolute;
+  right: 0;
+}
+.login{
+  text-decoration: none;
+  padding-right: 30px;
+  font-size: 20px;
+  color: white;
+}
+.sign-up{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
