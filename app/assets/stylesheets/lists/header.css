@@ -1,27 +1,43 @@
 * {
   box-sizing: border-box;
 }
-header{
+header,
+footer {
   width: 100vw;
   height: 100px;
   display: flex;
-  background-color: white;
+  background-color: black;
 }
 .logo{
   font-size: 40px;
+  color: white;
+  text-decoration: none;
 }
-.logo-box{
+.header-box{
   width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: black;
 }
-.right-header{
+.footer-box {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+.header-bar{
   display: flex;
   width: calc(100% - 250px);
   position: relative;
-  background-color: black;
+  background-color: lightgrey;
+}
+.footer-bar {
+  display: flex;
+  width: calc(100% - 250px);
+  position: relative;
+  background-color: lightgrey;
 }
 .user-page{
   display: flex;
@@ -30,14 +46,14 @@ header{
   position: absolute;
   right: 0;
 }
-.login{
+
+.sign-up,
+.logout,
+.login,
+.my-page,
+.new-post {
   text-decoration: none;
-  padding-right: 30px;
+  padding-left: 30px;
   font-size: 20px;
-  color: white;
-}
-.sign-up{
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
+  color: black;
 }
