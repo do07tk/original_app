@@ -9,10 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: lightgrey;
 }
 .bar{
   height: 100%;
   width: calc(100% - 250px);
-  background-color: white;
+  background-color: black;
 }
