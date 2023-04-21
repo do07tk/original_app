@@ -17,31 +17,26 @@
     </div>
 
     <% @lists.each do |list| %>
-      <div class = "message" id = "message-content", style = "display: none">
-
-        <%# タイトル表示覧 %>
-        <div class = 'list-info'>
-          <h3 class = 'list-top'>
-            <%= list.title %>
-          </h3>
-        </div>
+      <div class = "message" id = "message-content" style = "display: none;" >
 
         <div class = "messages">
           <%# 画像表示覧 %>
           <div class = "messages-left">
-            <div class = "list-left">
-              <%= image_tag list.image, class: "list-img" if list.image.attached? %>
-            </div>
+            <%= link_to list_path(list.id) do %>
+              <div class = "list-left">
+                <%= image_tag list.image, class: "list-img" if list.image.attached? %>
+              </div>
+            <% end %>
           </div>
 
           <%# テキスト表示覧 %>
           <div class = "messages-right">
             <div class = "message-right">
               <div class = "list-right">
-                <%= list.poster %>
+                by <%= list.poster %>
               </div>
               <div class = "list-right">
-                <%= list.date %>
+                <%= list.date %> 日
               </div>
             </div>
             <div class = "list-text">

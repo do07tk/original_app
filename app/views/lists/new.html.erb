@@ -1,12 +1,12 @@
 <%= render "template/header"%>
 
 <div class = "form-inner">
-  <%= form_with(model: @list, local: true) do |h| %>
-    <%= h.file_field :image, class:"image-form" %>
-    <%= h.text_field :title, placeholder: "Title", class: "title-form"%>
-    <%= h.text_field :poster, placeholder: "Poster", class:"poster-form"%>
-    <%= h.text_field :date, placeholder: "Date", class: "date-form"%>
-    <%= h.text_area :text, placeholder: "text", rows: "10", class: "text-form"%>
-    <%= h.submit "新規投稿", class: "new-submit-btm" %>
-  <% end %>
+    <%= form_with(model: @list, local: true) do |h| %>
+      <%= h.file_field :image, class:"image-form" %>
+      <%= h.text_field :title, placeholder: "Title", class: "title-form"%>
+      <%= h.text_field :poster, placeholder: "Poster", class:"poster-form"%>
+      <%= h.text_field :date, placeholder: "Date", class: "date-form"%>
+      <%= h.text_area :text, placeholder: "text", rows: "10", class: "text-form"%>
+      <%= h.submit "新規投稿", class: "new-submit-btm" %>
+    <% end %>
 </div>

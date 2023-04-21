@@ -1,8 +1,11 @@
 <%= render "template/header"%>
 
 <div class = "form-inner" >
-  <div class = "sign-up-title" ><p>新規登録ページ</p>
+
+  <div class = "sign-up-title" >
+    <div class = "sign-title">新規登録ページ</div>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    
       <%= render "devise/shared/error_messages", resource: resource %>
 
       <div class = "field">
@@ -17,9 +20,6 @@
 
       <div class = "field">
         <%= f.label "パスワード" %><br />
-        <%# if @minimum_password_length %>
-        <%# <em>(= @minimum_password_length characters minimum)</em> %>
-        <%# end %>
         <%= f.password_field :password, autocomplete: "new-password", class: "password-field" %>
       </div>
 
