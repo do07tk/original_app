@@ -1,0 +1,95 @@
+.list-show {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  background-color: white
+}
+.left-box {
+  font-weight: bold;
+  font-size: 25px;
+  width: 50%;
+}
+.right-box {
+  height: 100%;
+  width: 50%;
+}
+.name {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-btn {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding: 20px 150px;
+}
+.edit-btn {
+  width: 200px;
+  height: 50px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destroy-btn {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-red-btn,
+.list-destroy {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.list-img-content {
+  max-height: calc(100% - 100px);
+  max-width: calc(100vw / 2);
+}
+.list-box-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.list-title {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.list-text {
+  height: calc(100% - 100px);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* hover.css */
+.name:hover {
+  cursor: default;
+}
+.name:hover span {
+  display: inline;
+}
+.name span.poster {
+  display: inline;
+}
+.name:hover span.poster {
+  display: none;
+}
+.name span.text {
+  display: none;
+  color: red;
+}
+.name:hover span.text {
+  display: inline;
+}

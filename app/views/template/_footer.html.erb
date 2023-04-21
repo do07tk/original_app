@@ -1,6 +1,11 @@
 <footer class = "footer">
 
-  <div class = "footer-box">
+  <div class = "footer-box" id = "footer-content" >
+    <% @lists.each do |list| %>
+      <div class = "footer-text" id = "footer-content" style = "display: none;">
+        <%= list.title %>
+      </div>
+    <% end %>
   </div>
   <div class = "footer-bar">
     <%# @comments.each do |comment| %>

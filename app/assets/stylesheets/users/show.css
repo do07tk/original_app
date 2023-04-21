@@ -1,0 +1,24 @@
+.table{
+  width: 500px;
+}
+.table-1{
+  font-weight: bold;
+  background-color: lightgrey;
+  border: 1px solid black;
+  width: 30%;
+  padding: 10px;
+}
+.table-2{
+  border: 1px solid black;
+  width: 70%;
+  padding: 10px;
+}
+.table-inner {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+
+

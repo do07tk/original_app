@@ -1,6 +1,7 @@
 .main{
   width: 100vw;
   height: 100vh;
+
 }
 .inner{
   height: calc(100% - (100px + 50px + 100px));
@@ -17,7 +18,8 @@
 }
 .messages {
   display: flex;
-  height: calc(100% - 50px);
+  height: 100%;
+  font-family: "游ゴシック", "YuGothic";
 }
 .messages-left,
 .messages-right {
@@ -36,6 +38,9 @@
 .list-info {
   height: 50px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "游ゴシック", "YuGothic";
 }
 .list-top {
   font-size: 30px;
@@ -46,6 +51,12 @@
 }
 .list-right {
   font-size: 30px;
+}
+.list-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .list-text {
   font-size: 20px;

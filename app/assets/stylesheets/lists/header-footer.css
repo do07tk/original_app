@@ -1,8 +1,6 @@
-* {
-  box-sizing: border-box;
-}
 header,
 footer {
+  box-sizing: content-box;
   width: 100vw;
   height: 100px;
   display: flex;
@@ -25,19 +23,19 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgrey;
+  background-color: white;
 }
 .header-bar{
   display: flex;
   width: calc(100% - 250px);
   position: relative;
-  background-color: lightgrey;
+  background-color: white;
 }
 .footer-bar {
   display: flex;
   width: calc(100% - 250px);
   position: relative;
-  background-color: lightgrey;
+  background-color: black;
 }
 .user-page{
   display: flex;
@@ -55,5 +53,8 @@ footer {
   text-decoration: none;
   padding-left: 30px;
   font-size: 20px;
+  color: black;
+}
+.footer-text {
   color: black;
 }
