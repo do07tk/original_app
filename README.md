@@ -10,6 +10,7 @@
 
 ### Assosiation
 - has_many :lists
+- has_many :comments
 
 ## listsテーブル
 
@@ -23,3 +24,14 @@
 
 ### Assosiation
 - belongs_to :user
+
+## commentsテーブル
+
+| Column | Type       | Option                         |
+| -------| ---------- | ------------------------------ |
+| user   | references | null: false, foreign_key: true |
+| list   | references | null: false, foreign_key: true |
+
+### Assosiation
+- belongs_to :user
+- belongs_to :list
