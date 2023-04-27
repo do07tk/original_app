@@ -23,6 +23,14 @@ class ListsController < ApplicationController
     @list = List.find(params[:id])
   end
 
+  def destroy
+    list = List.find(params[:id])
+    if (user_signed_in? && current_user.id == list.user.id)
+      list.destroy
+    end
+    redirect_to root_path
+  end
+
   private
 
   def list_params

@@ -3,7 +3,7 @@
 <div class = "list-show">
   <div class = "left-box">
     <div class="name">
-      <span class="poster"><%= @list.poster %></span>
+      <span class="poster"><%= @list.poster %>さん</span>
       <span class="text">投稿者名</span>
     </div>
     <% if user_signed_in? && current_user.id == @list.user.id %>
@@ -18,7 +18,10 @@
     <% end %>
 
     <div class = "list-img-content">
-      <%= link_to image_tag(@list.image, class: "list-box-img") %> 
+      <%#= link_to image_tag(@list.image, class: "list-box-img") %> 
+      <div class="list-box-img">
+        <%= image_tag(@list.image) %>
+      </div>
     </div>
 
   </div>
