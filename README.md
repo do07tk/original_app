@@ -1,37 +1,49 @@
-# テーブル設計
+# アプリケーション名
+hoge
 
-## usersテーブル
+# アプリケーション概要
+分からなかったところやErrorメッセージを投稿し、メモとして残しておくアプリケーション
 
-| Column             | Type   | Option                    |
-| ---------------    | ------ | ------------------------- |
-| nickname           | string | null: false               |
-| email              | string | unique: true, null: false |
-| encrypted_password | string | null: false,  default: "" |
+# URL
+hoge
 
-### Assosiation
-- has_many :lists
-- has_many :comments
+# テスト用アカウント
+hoge
 
-## listsテーブル
+# 利用方法
+## 目標投稿
+#
+1.トップページのヘッダーからユーザー新規登録を行う
+2.新規投稿ページからタイトル、日付、投稿者名、内容を入力し投稿ボタンを押す
+3.トップページにてサイドヘッダーに表示されているタイトルをクリックすると投稿内容が表示される
 
-| Column | Type       | Option                         |
-| -------| ---------- | ------------------------------ |
-| title  | string     | null: false                    |
-| poster | string     | null: false                    |
-| date   | string     | null: false                    |
-| text   | string     | null: false                    |
-| user   | references | null: false, foreign_key: true |
+## 他者を励ます
+#
+hoge
 
-### Assosiation
-- belongs_to :user
+# アプリケーションを作成した背景
+学習をしている中、また同じことについて調べているなと言う事が多くメモが取れるアプリがあったら便利だなと思い作成を始めました。
 
-## commentsテーブル
+# 洗い出した要件
+hoge
 
-| Column | Type       | Option                         |
-| -------| ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| list   | references | null: false, foreign_key: true |
+# 実装機能についての画像やGIFおよびその説明
+hoge
 
-### Assosiation
-- belongs_to :user
-- belongs_to :list
+# 実装予定の機能
+現在、ユーザーの詳細機能を作成中です。
+
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/408b3e16eff2dbb790fa10973e1f67af.png)](https://gyazo.com/408b3e16eff2dbb790fa10973e1f67af)
+
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/34286a691879989b1671b97b1b95de8f.png)](https://gyazo.com/34286a691879989b1671b97b1b95de8f)
+
+# 開発環境
+hoge
+
+# ローカルでの動作方法
+hoge
+
+# 工夫したポイント
+hoge

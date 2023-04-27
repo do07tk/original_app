@@ -18,6 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 0;
 }
 .show-btn {
   display: flex;
@@ -53,7 +54,7 @@
   max-height: calc(100% - 100px);
   max-width: calc(100vw / 2);
 }
-.list-box-img {
+.list-box-img img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
@@ -74,15 +75,6 @@
 }
 
 /* hover.css */
-.name:hover {
-  cursor: default;
-}
-.name:hover span {
-  display: inline;
-}
-.name span.poster {
-  display: inline;
-}
 .name:hover span.poster {
   display: none;
 }
@@ -92,4 +84,13 @@
 }
 .name:hover span.text {
   display: inline;
+}
+
+.edit-btn:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
+.destroy-btn:hover{
+  background-color: darkred;
+  cursor: pointer;
 }
